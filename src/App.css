@@ -2,7 +2,8 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 .home {
@@ -11,7 +12,14 @@
   justify-content: center;
   height: 94vh;
   font-size: 3rem;
+  text-shadow: 1px 1px 2px pink;
 }
+
+/* .foot {
+  position: absolute;
+  bottom: 3px;
+  color: white;
+} */
 
 .home {
   background-image: url("./images/nature.jpg");

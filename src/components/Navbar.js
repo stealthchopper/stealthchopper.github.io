@@ -1,6 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { FaInstagram } from "react-icons/fa";
+import { FiTwitter } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
 
 function showBusiness(business) {
   return business.busName;
@@ -16,10 +19,22 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar">
         <h1 className="nav-title">{showBusiness(business)}</h1>
+        <Link to="/" className="navbar-logo">
+          <img src="../images/ok.svg" alt=""></img>
+        </Link>
         <ul className="nav-menu">
-          <li className="nav-item">Instagram</li>
-          <li className="nav-item">WhatsApp</li>
-          <li className="nav-item">Facebook</li>
+          <a
+            href="https://www.instagram.com/seagullforest/?hl=en"
+            className="nav-item"
+          >
+            <FaInstagram />
+          </a>
+          <a href="https://twitter.com/seagullforest" className="nav-item">
+            <FiTwitter />
+          </a>
+          <li className="nav-item">
+            <FiFacebook />
+          </li>
         </ul>
       </nav>
     );
