@@ -29,8 +29,10 @@
 }
 
 .nav-item {
+  color: pink;
+  text-decoration: none;
   list-style-type: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-right: 20px;
 }
 

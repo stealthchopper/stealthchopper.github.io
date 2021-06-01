@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
+import { GiSeagull } from "react-icons/gi";
 
 function showBusiness(business) {
   return business.busName;
@@ -20,7 +21,7 @@ class Navbar extends React.Component {
       <nav className="navbar">
         <h1 className="nav-title">{showBusiness(business)}</h1>
         <Link to="/" className="navbar-logo">
-          <img src="../images/ok.svg" alt=""></img>
+          <GiSeagull />
         </Link>
         <ul className="nav-menu">
           <a
