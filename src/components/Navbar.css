@@ -13,17 +13,17 @@
   flex-wrap: wrap;
   justify-self: start;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .nav-menu {
   color: white;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 5px;
   list-style: none;
   text-align: center;
-  width: 65vw;
+  width: 60vw;
   justify-content: end;
   margin-right: 1rem;
 }
