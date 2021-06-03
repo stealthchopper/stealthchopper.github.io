@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { GiSeagull } from "react-icons/gi";
 import {
   Nav,
   NavbarContainer,
@@ -17,7 +18,10 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">SeagullForest</NavLogo>
+          <NavLogo to="/">
+            SeagullForest
+            <GiSeagull />
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -36,7 +40,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign</NavBtnLink>
+            <NavBtnLink to="/signin">Sign Up</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
