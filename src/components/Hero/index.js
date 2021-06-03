@@ -15,7 +15,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>GME after we blow</HeroH1>
+        <HeroH1>Functionalities Pending</HeroH1>
       </HeroContent>
     </HeroContainer>
   );
