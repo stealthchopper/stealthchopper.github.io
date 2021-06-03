@@ -6,11 +6,11 @@
   overflow: hidden;
 }
 
-.home {
+/* .home {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 94vh;
+  height: 100vh;
   font-size: 2rem;
   text-shadow: 1px 1px 2px pink;
 }
@@ -21,10 +21,10 @@
   color: white;
 } */
 
-.home {
+/* .home {
   background-image: url("./images/nature.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-}
+} */
