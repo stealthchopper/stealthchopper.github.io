@@ -1,6 +1,10 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import { GiSeagull } from "react-icons/gi";
+import { FaInstagram } from "react-icons/fa";
+import { FiTwitter } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
+import "./Navbar.css";
 import {
   Nav,
   NavbarContainer,
@@ -42,6 +46,14 @@ const Navbar = ({ toggle }) => {
           <NavBtn>
             <NavBtnLink to="/signin">Sign In</NavBtnLink>
           </NavBtn>
+
+          {/* <NavBtn>
+            <NavBtnLink to="/signin">
+              <a href="https://twitter.com/seagullforest" className="twitter">
+                <FiTwitter />
+              </a>
+            </NavBtnLink>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>
