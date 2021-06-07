@@ -1,10 +1,11 @@
-import React from "react";
-import { FaBars } from "react-icons/fa";
-import { GiSeagull } from "react-icons/gi";
-import { FaInstagram } from "react-icons/fa";
-import { FiTwitter } from "react-icons/fi";
-import { FiFacebook } from "react-icons/fi";
-import "./Navbar.css";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+// import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
+import { GiWoodCabin } from 'react-icons/gi';
+
+import './Navbar.css';
 import {
   Nav,
   NavbarContainer,
@@ -15,32 +16,87 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from "./NavbarElements";
+} from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
-      <Nav>
+      {/* <IconContext.provider value={{ color: '#fff' }}> */}
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">
-            SeagullForest
-            <GiSeagull />
+          <NavLogo to="/" onClick={toggleHome}>
+            Woodland Interior
+            <GiWoodCabin className="icon" />
           </NavLogo>
-          <MobileIcon onClick={toggle}>
+          <MobileIcon onClick={toggleHome}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                About
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks
+                to="discover"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Discover
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Services">Services</NavLinks>
+              <NavLinks
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Services
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Sign-Up">Sign-Up</NavLinks>
+              <NavLinks
+                to="sign-up"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Sign-Up
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
@@ -56,6 +112,7 @@ const Navbar = ({ toggle }) => {
           </NavBtn> */}
         </NavbarContainer>
       </Nav>
+      {/* </IconContext.provider> */}
     </>
   );
 };

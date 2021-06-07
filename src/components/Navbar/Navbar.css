@@ -11,3 +11,7 @@
   transition: all 0.2s ease ease-in-out;
   text-decoration: none;
 } */
+
+.icon {
+  margin-left: 10px;
+}
