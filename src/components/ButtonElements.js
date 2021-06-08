@@ -18,6 +18,6 @@ export const Button = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-ease-out;
-    background: ${({ primary }) => (primary ? 'orange' : '#01BF71')};
+    background: ${({ primary }) => (primary ? 'orange' : '#fff')};
   }
 `;

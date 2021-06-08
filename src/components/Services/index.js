@@ -21,23 +21,32 @@ const Services = () => {
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1} />
-            <ServicesH2>Reduce Expenses</ServicesH2>
-            <ServicesP>We help reduce feel and increase revenue</ServicesP>
+            <ServicesH2>Kitchens</ServicesH2>
+            <ServicesP>
+              Choose Your distinct kitchen style and begin your journey
+            </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon2} />
-            <ServicesH2>Reduce Expenses</ServicesH2>
-            <ServicesP>We help reduce feel and increase revenue</ServicesP>
+            <ServicesH2>Bathrooms</ServicesH2>
+            <ServicesP>
+              Premium bathroom tiling and fitting for your house
+            </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon3} />
-            <ServicesH2>Reduce Expenses</ServicesH2>
-            <ServicesP>We help reduce feel and increase revenue</ServicesP>
+            <ServicesH2>Consulting</ServicesH2>
+            <ServicesP>
+              Query a Woodland proffesional who can suggest the best
+              combinations
+            </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon4} />
-            <ServicesH2>Reduce Expenses</ServicesH2>
-            <ServicesP>We help reduce feel and increase revenue</ServicesP>
+            <ServicesH2>Custom Woodwork</ServicesH2>
+            <ServicesP>
+              If you want a custom product you can access this premium feature
+            </ServicesP>
           </ServicesCard>
         </ServicesWrapper>
       </ServicesContainer>

@@ -46,7 +46,7 @@ const Navbar = ({ toggle }) => {
             Woodland Interior
             <GiWoodCabin className="icon" />
           </NavLogo>
-          <MobileIcon onClick={toggleHome}>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
