@@ -100,7 +100,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Email Us</NavBtnLink>
+            <NavBtnLink to="/email">Email Us</NavBtnLink>
           </NavBtn>
 
           {/* <NavBtn>

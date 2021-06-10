@@ -23,8 +23,9 @@ export const homeObjTwo = {
   lightTextDesc: true,
   topLine: 'Come on',
   headline: 'Still Waiting?',
-  description: 'Visit our social media and see what you are in for!',
-  buttonLabel: 'Call Us',
+  description:
+    'Visit our social media and see what you are in for, or simply call!',
+  buttonLabel: 'Call at 07515427458',
   imgStart: true,
   img: require('../../images/svg-3.svg').default,
   alt: 'Car',
