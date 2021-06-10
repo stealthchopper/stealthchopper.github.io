@@ -28,10 +28,8 @@ const Services = () => {
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon2} />
-            <ServicesH2>Bathrooms</ServicesH2>
-            <ServicesP>
-              Premium bathroom tiling and fitting for your house
-            </ServicesP>
+            <ServicesH2>Bedrooms</ServicesH2>
+            <ServicesP>Premium bedroom fitting for your house</ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon3} />
