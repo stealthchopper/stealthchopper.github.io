@@ -9,10 +9,10 @@ export const homeObjOne = {
     'Begin change when you encounter our premium services and best options for your price range.',
   buttonLabel: 'Get started',
   imgStart: true,
-  img: require('../../images/svg-2.svg').default,
+  img: require('../../images/logo512.png').default,
   alt: 'Car',
   dark: false,
-  primary: true,
+  primary: false,
   darkText: false,
 };
 
@@ -24,12 +24,12 @@ export const homeObjTwo = {
   topLine: 'Come on',
   headline: 'Still Waiting?',
   description: 'Visit our social media and see what you are in for!',
-  buttonLabel: 'Get started',
+  buttonLabel: 'Call Us',
   imgStart: true,
   img: require('../../images/svg-3.svg').default,
   alt: 'Car',
   dark: false,
-  primary: true,
+  primary: false,
   darkText: false,
 };
 
@@ -42,11 +42,11 @@ export const homeObjThree = {
   headline: 'Began as a humble van and grew into woodworks',
   description:
     'Our passion for Woodworks exceeds limits, we provide distinct services at humble price ranges ',
-  buttonLabel: 'Get started',
+  buttonLabel: 'Email Us',
   imgStart: false,
-  img: require('../../images/svg-4.svg').default,
+  img: require('../../images/van.svg').default,
   alt: 'Car',
   dark: false,
-  primary: true,
+  primary: false,
   darkText: false,
 };
