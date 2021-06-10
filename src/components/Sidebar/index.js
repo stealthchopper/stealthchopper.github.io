@@ -21,10 +21,10 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="about"> About</SidebarLink>
           <SidebarLink to="discover"> Discover</SidebarLink>
           <SidebarLink to="services"> Services</SidebarLink>
-          <SidebarLink to="sign-up"> Sign-up</SidebarLink>
+          <SidebarLink to="sign-up"> Call Us</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
+          <SidebarRoute to="/email">Email Us</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

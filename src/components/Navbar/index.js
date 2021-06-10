@@ -95,12 +95,12 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Free Quote
+                Telephone
               </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/email">Email Us</NavBtnLink>
+            <NavBtnLink to="/email">Email Quote</NavBtnLink>
           </NavBtn>
 
           {/* <NavBtn>
